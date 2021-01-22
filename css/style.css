@@ -1,0 +1,1019 @@
+body, h1, h2, h3, h4, a, p, ul, li, input, button,textarea{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    background-color: #F9F9F9;
+    font-size: 65,2%;    
+}
+
+.container{
+    max-width: 320px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* MOBILE FIRST */
+
+.header{
+    padding: 20px 0;
+    width: 100%;
+    z-index: 9999;    
+    position: fixed;
+    transition: 0.6s;
+}
+
+.header.modular{
+    padding: 20px 0;
+    width: 100%;
+    z-index: 9999;    
+    position: fixed;
+    background-color: #0000009d;
+}
+
+.modular .iconMenu{
+    background-color: white;
+}
+
+.modular .menu a{
+    color: white;
+}
+
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logomarca{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.logomarca::before{
+    content: 'AU';
+    background: #04CA67;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+/* Icon-Hamburguer */
+
+.icon{
+    z-index: 9999;
+}
+
+.um{
+    width: 25px;
+    height: 3px;
+    background-color: #212121;
+    transition: 0.3s;
+}
+
+.dois{
+    width: 25px;
+    height: 3px;
+    background-color: #212121;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.tres{
+    width: 25px;
+    height: 3px;
+    background-color: #212121;
+    transition: 0.3s;
+}
+
+/* Icone vira X */
+
+.icon-x .um{
+    background-color: white;
+    transform: rotate(45deg) translate(0px, 0px);
+}
+
+.icon-x .dois{
+    background-color: white;
+    opacity: 0;
+}
+
+.icon-x .tres{
+    background-color: white;
+    transform: rotate(-45deg) translate(8px, -9px);
+}
+
+/* Menu-mobile */
+
+.ativo.menu{
+    background: linear-gradient(140deg, #23ff91, rgb(6, 119, 119));
+
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    animation: menuMobile 0.3s;
+}
+
+.ativo.menu li+li{
+    margin-top: 20px;
+}
+
+.ativo.menu a{
+    color: white;
+    font-size: 1.5rem;    
+}
+
+#login-button{
+    background: #04CA67;
+    padding: 10px 30px;
+    color: white;
+}    
+
+.menu{
+    display: none;
+}
+
+/* Animação menu */
+
+@keyframes menuMobile{
+    from{
+        left: -500px;
+    }
+
+    to{
+        left: 0;
+    }
+}
+
+/* Background */
+
+.bg{
+    background-image: url(../img/bg-mobile.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.overlay-canto{
+    background-image: url(../img/overlay-canto.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 170px;
+    height: 180px;
+    background-repeat: no-repeat;    
+}
+
+.overlay{
+    background-image: url(../img/overlay-mobile.png);
+    width: 100%;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    bottom: -45px;
+}
+
+/* BG TEXTO */
+
+.bg-item h1{
+    font-size: 2.0rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.bg-item p{
+    font-size: 1.0rem;
+    color: white;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+/* BUTTON ANIMATION */
+
+.button-conhecer{
+    margin: 30px 0; 
+}
+
+.button-conhecer a{
+    font-size: 1.5rem;
+    color: white;
+    background: #04CA67;
+    padding: 15px 30px;
+    font-weight: bold;
+    
+}
+
+.bg-item img{
+    display: none;
+}
+
+.modal-video{
+    display: none;
+}
+
+/* OVERLAY SETA */
+
+.section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content h2{
+    font-size: 1.8rem;
+    color: rgb(75, 75, 75); 
+    margin-top: 50px; 
+}
+
+.section-content h2::after{
+    content: 'Dreams';
+    font-size: 1.8rem;
+    color: #04CA67;
+    margin-left: 10px;
+}
+
+/* CONTENT */
+
+.content-flex{
+    margin: 50px 0;
+}
+
+.box-text{
+    background-color: white;
+    padding: 15px;
+    margin: 40px 0;
+    box-shadow: 2px 2px 12px rgb(211, 255, 233);
+    border-radius: 10px;
+}
+
+.box-text h2{
+    color: rgb(75, 75, 75);
+}
+
+.box-text p{
+    padding: 10px 0 20px 0;
+    color: rgb(75, 75, 75);
+}
+
+.box-text img{
+    border-radius: 10px;
+}
+
+.button-explorar{
+    margin: 30px 0; 
+}
+
+.button-explorar a{
+    font-size: 1.5rem;
+    color: white;
+    background: #04CA67;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+/* ILUSTRATION */
+
+.ilustration{
+    margin: 100px 0;
+}
+
+
+.ilustration-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.part-1{
+    background-color: #04CA67;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.part-1 h3{
+    color: white;
+    font-size: 2.0rem;
+
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+}
+
+.part-1 img{
+    width: 60%;
+}
+
+.part-2{
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.part-2 h3{
+    color: #04CA67;
+    font-size: 2.0rem;
+
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+.part-2 img{
+    width: 60%;
+}
+
+/* PARALLAX */
+
+.parallax{
+    background-image: url(../img/krasota-planety_16.gif);
+    width: 100%;
+    height: 30vh;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;  
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.parallax h4{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 12px rgb(255, 255, 255);    
+    font-style: italic;
+}
+
+.parallax h4::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s;
+    timing-function: 50s;
+    opacity: 0;
+}
+
+.parallax h4::after{
+    content: ' |';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* FORMULÁRIO */
+
+.formulario{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1{
+    font-size: 1.5rem;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.form input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0 ;
+    border: 1px solid #ccc;
+}
+
+.form textarea{
+    width: calc(100% - 19px);
+    padding: 10px;
+    height: 100px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
+}
+
+.form input:focus{
+    border: 1px solid #04CA67;
+}
+
+.form textarea:focus{
+    border: 1px solid #04CA67;
+}
+
+.form button{
+    width: 101%;
+    padding: 10px;
+    background-color: #04CA67;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+    /* FOOTER */
+
+    .footer{
+        background-color: #04CA67;
+        width: 100%;
+        height: 50vh;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-flex{
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* FOOTER ESTILOS */
+
+    .logo-footer{
+        display: none;
+    }
+
+    .remove{
+        display: none;
+    }
+
+
+    .links a{
+        color: white;
+    }
+
+    .links li+li{
+        margin-top: 20px;
+    }
+
+    .links h3{
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    .creditos{
+        text-align: center;
+        background-color: #212121;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+/* TABLET */
+
+@media (min-width: 600px){
+    .container{
+        max-width: 800px;
+        width: 85%;
+    }
+
+    .overlay-canto{
+        background-image: url(../img/overlay-canto-desktop2.png);
+        width: 280px;
+        height: 80px;   
+    }
+
+    .bg{
+        height: 70vh;
+    }
+
+    .bg-item h1{
+        font-size: 3.5rem;
+    }
+
+    .bg-item p{
+        max-width: 600px;
+        font-size: 1.3rem;
+    }
+
+    .overlay{
+        background-image: url(../img/overlay-desktop.png);
+        background-size: contain;
+        bottom: -60px;
+    }
+
+    .ativo.menu li+li{
+        margin-top: 50px;
+    }
+
+    .ativo.menu a{
+        font-size: 3.0rem;
+    }
+
+    /* CONTENT */
+
+    .box-text{
+        max-width: 65%;        
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .section-content h2{
+        font-size: 3.0rem;
+    }
+
+    .section-content h2::after{
+        font-size: 3.0rem;
+    }
+
+    /* ILUSTRATION */
+
+    .ilustration-grid{
+        grid-template-columns: 1fr 1fr;
+        margin: 100px 0;
+    }
+
+    .part-1{
+        height: 30vh;
+    }
+
+    .part-1 img{
+        width: 70%;
+    }
+
+    .part-2{
+        height: 30vh;
+    }
+
+    .part-2 img{
+        width: 70%;
+    }
+
+    /* PARALLAX */
+
+    .parallax{
+        height: 30vh;   
+        background-size: cover;
+    }
+
+
+        /* FORMULÁRIO */
+
+    .formulario{
+        height: 50vh;
+    }
+
+    .form h1{
+        font-size: 1.8rem;
+    }
+
+    .form textarea{
+        width: calc(100% - 20px);
+    }
+
+    .form button{
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        background-color: #04CA67;
+        width: 100%;
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .creditos{
+        text-align: center;
+        background-color: #212121;
+        color: white;
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1025px){
+    .container{
+        max-width: 1700px;
+        width: 85%;
+    }
+
+    .header{
+        padding: 25px 0;
+    }
+
+    @keyframes menuModular{
+        from{
+            top: -500px;
+        }
+    
+        to{
+            top: 0;
+        }
+    }
+
+    .header.modular{
+        animation: menuModular 0.5s;
+    }
+
+    /* MENU */
+
+    .menu{
+        display: block;
+    }
+
+    .menu ul{
+        display: flex;
+    }
+
+    .menu li+li{
+        margin-left: 20px;
+    }
+
+    .menu a{
+        font-size: 1.2rem;
+        color: #212121;
+        transition: 0.3s;
+    }
+
+    .menu a:hover{
+        color: #04CA67;
+    }
+
+    #login-button{
+        padding: 10px 30px;
+        color: white;
+    }     
+
+    .icon{
+        display: none;
+    }  
+
+    /* BACKGROUND */
+
+    .bg{
+        background-image: url(../img/bg-desktop.png);
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .overlay-canto{
+        background-image: url(../img/overlay-canto-desktop3.png);
+        width: 640px;
+        height: 100px;
+    
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .overlay{
+        background-image: url(../img/overlay-desktop.png);
+        background-size: cover;
+        bottom: -10px;
+    }
+
+    .bg-item h1{
+        font-size: 3.5rem;
+    }
+
+    .bg-item p{
+        font-size: 1.2rem;
+    }
+    
+    .bg-item img{
+        display: block; 
+        width: 30%;   
+        cursor: pointer;  
+        transition: 0.5s; 
+        border-radius: 10px; 
+    }  
+
+    .bg-item img:hover{
+        opacity: 0.8;    
+    } 
+
+    .bg-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* BUTTON EFECT */
+
+    @keyframes button{
+        0%, 20%, 60%, 100%{
+            transform: translateY(0);
+        } 
+
+        40% {
+            transform: translateY(-20px);
+        }
+
+        80% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    .bg-text{
+        margin-right: 50px;
+    } 
+
+    .button-conhecer:hover{
+        animation: button 0.5s;
+    }
+    
+    /* MODAL VIDEO */
+
+    .video-ativo.modal-video{
+        background-color: rgba(0, 0, 0, 0.931);
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    .modal-video iframe{
+        width: 70%;
+        height: 80%;        
+    }
+
+    /* OVERLAY SETA */
+
+    .section-content h2{
+        font-size: 3.0rem;
+    }
+
+    .section-content h2::after{
+        font-size: 3.0rem;
+        margin-left: 10px;
+    }
+
+    /* CONTENT */
+
+    .content-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @keyframes teste{
+        0%, 100%{
+            transform: translateY(0);
+        }
+
+        40%{
+            transform: perspective(220px) translateZ(20px);
+        }
+    }
+
+    .box-text{
+        max-width: 25%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .box-text img{
+        border-radius: 10px;
+    }
+
+    .box-text:hover{
+        animation: teste 1s;
+    }   
+
+    /* ILUSTRATION */
+    .ilustration-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .part-1{
+        height: 50vh;
+    }
+
+    .part-1 img{
+        width: 50%;
+        padding: 50px;
+    }
+
+    .part-2{
+        height: 50vh;
+    }
+
+    .part-2 img{
+        width: 50%;
+        padding: 50px;
+    }
+
+    /* PARALLAX */
+
+    .parallax{
+        height: 40vh;   
+    }
+
+    .parallax h4{
+        font-size: 3.0rem;
+    }    
+
+    /* FORMULÁRIO */
+
+    .formulario{
+        height: 50vh;            
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-1{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }        
+
+    .input-2{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .text-area{
+        width: 49.8%;
+    }
+
+    .form button{
+        width: 50%;
+        cursor: pointer;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        background-color: #04CA67;
+        width: 100%;
+        height: 30vh;    
+    }
+
+    .footer-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* FOOTER ESTILOS */
+
+    .logo-footer{
+        display: block;
+    }
+
+    .remove{
+        display: block;
+    }
+
+    .logo-footer a{
+        color: white;
+        font-size: 2.0rem;
+        font-weight: bold;
+    }
+
+    .logo-footer::before{
+        margin-right: 20px;
+        content: 'AU';
+        font-size: 2.0rem;
+        color: white;
+        background-color: #04CA67;
+        border: 1px solid #ccc;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .icons-social{
+        margin-top: 50px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .icons-social i{
+        margin-right: 20px ;
+        
+    }
+
+    .links{
+        text-align: center;
+    }
+
+    .links a{
+        color: white;
+    }
+
+    .links li+li{
+        margin-top: 20px;
+    }
+
+    .links h3{
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    .creditos{
+        text-align: center;
+        background-color: #212121;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar-track
+    {
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+        background-color: rgba(0, 0, 0, 0.342);
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
